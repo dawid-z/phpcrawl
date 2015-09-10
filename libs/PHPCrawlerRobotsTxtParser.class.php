@@ -10,6 +10,9 @@ class PHPCrawlerRobotsTxtParser
 {
     public function __construct()
     {
+        // Include needed class-files
+        $classpath = dirname(__FILE__);
+
         // Init PageRequest-class
         if (!class_exists("PHPCrawlerHTTPRequest")) include_once($classpath . "/PHPCrawlerHTTPRequest.class.php");
         $this->PageRequest = new PHPCrawlerHTTPRequest();
