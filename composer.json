@@ -8,5 +8,10 @@
             "email": "phpcrawl@cuab.de"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PHPCrawl\\": "libs/"
+        }
+    }
 }
